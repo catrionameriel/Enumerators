@@ -10,7 +10,7 @@ describe('Array tasks', function () {
 		assert.deepStrictEqual(arrayTasks.concat(arr1, arr2), expectation)
 	})
 
-	xit('should insert an item in an array at any index position', function () {
+	it('should insert an item in an array at any index position', function () {
 		var arr = [1, 2, 4]
 		assert.deepStrictEqual(arrayTasks.insertAt(arr, 3, 2), [1, 2, 3, 4])
 	})

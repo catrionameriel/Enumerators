@@ -4,9 +4,10 @@ var arrayTasks = {
 		return arr1.concat(arr2);
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		arr.splice(index, 0, itemToAdd);
+		return arr;
+	},
 
 	// square: function (arr) {
 
