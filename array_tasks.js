@@ -22,9 +22,17 @@ var arrayTasks = {
 		return arr.reduce(reducer);
 	},
 
-	// findDuplicates: function (arr) {
-
-	// },
+	findDuplicates: function (arr) {
+		let result = [];
+		arr.forEach(function(number, index) {
+			if (arr.indexOf(number, index + 1) > -1) {
+				if (result.indexOf(number) === -1) {
+					result.push(number);
+				}
+			}
+		})
+		return result;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 
