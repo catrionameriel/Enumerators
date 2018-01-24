@@ -9,9 +9,11 @@ var arrayTasks = {
 		return arr;
 	},
 
-	// square: function (arr) {
-
-	// },
+	square: function (arr) {
+		return arr.map(function(x) {
+				return x ** 2;
+		})
+	},
 
 	// sum: function (arr) {
 

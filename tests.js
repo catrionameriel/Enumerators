@@ -15,7 +15,7 @@ describe('Array tasks', function () {
 		assert.deepStrictEqual(arrayTasks.insertAt(arr, 3, 2), [1, 2, 3, 4])
 	})
 
-	xit('should square all values in an array, returning a new array', function () {
+	it('should square all values in an array, returning a new array', function () {
 		var arr = [1, 2, 3, 4, 5]
 		assert.deepStrictEqual(arrayTasks.square(arr), [1, 4, 9, 16, 25])
 	})
