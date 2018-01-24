@@ -34,9 +34,15 @@ var arrayTasks = {
 		return result;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		let result = [];
+		arr.find(function(number){
+			if (number != valueToRemove){
+				result.push(number);
+			}
+		})
+		return result;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
