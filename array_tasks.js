@@ -15,9 +15,12 @@ var arrayTasks = {
 		})
 	},
 
-	// sum: function (arr) {
-
-	// },
+	sum: function (arr) {
+		let reducer = function(accumulator, current){
+			return accumulator + current;
+		}
+		return arr.reduce(reducer);
+	},
 
 	// findDuplicates: function (arr) {
 
