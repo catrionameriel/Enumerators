@@ -47,17 +47,34 @@ var arrayTasks = {
 	findIndexesOf: function (arr, itemToFind) {
 		let result = [];
 		arr.forEach(function(number, index) {
-			if (number == itemToFind) {
+			if (number === itemToFind) {
 				result.push(index);
 			}
 		})
 		return result;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		let newArray = [];
+		arr.find(function(number){
+			let check = number / 2;
+			if (Number.isInteger(check)){
+				newArray.push(number);
+			}
+		})
+		// newArray.forEach(function(number){
+		// 	return number*number;
+		// })
+		let newerArray = this.square(newArray);
+		// return newArray.reduce(function(accumulator, current){
+		// 	return accumulator + current;
+		// })
+		return this.sum(newerArray);
+	}
 
 }
+
+var arr = [1, 2, 3, 4, 5]
+arrayTasks.sumOfAllEvenNumbersSquared(arr)
 
 module.exports = arrayTasks
