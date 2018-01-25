@@ -54,6 +54,19 @@ var arrayTasks = {
 		return result;
 	},
 
+	// sumOfAllEvenNumbersSquared: function (arr) {
+	// 	let newArray = [];
+	// 	arr.find(function(number){
+	// 		let check = number / 2;
+	// 		if (Number.isInteger(check)){
+	// 			newArray.push(number);
+	// 		}
+	// 	})
+	// 	let newerArray = this.square(newArray);
+	// 	return this.sum(newerArray);
+	// }
+
+
 	sumOfAllEvenNumbersSquared: function (arr) {
 		let newArray = [];
 		arr.find(function(number){
@@ -62,19 +75,16 @@ var arrayTasks = {
 				newArray.push(number);
 			}
 		})
-		// newArray.forEach(function(number){
-		// 	return number*number;
-		// })
-		let newerArray = this.square(newArray);
-		// return newArray.reduce(function(accumulator, current){
-		// 	return accumulator + current;
-		// })
-		return this.sum(newerArray);
+		let arrayToReturn = newArray.forEach(function(number) {
+			number ** 2;
+		})
+
+		return arrayToReturn.reduce(function(accumulator, current){
+			return accumulator + current;
+		})
+
 	}
 
 }
-
-var arr = [1, 2, 3, 4, 5]
-arrayTasks.sumOfAllEvenNumbersSquared(arr)
 
 module.exports = arrayTasks
