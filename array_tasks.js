@@ -75,8 +75,9 @@ var arrayTasks = {
 				newArray.push(number);
 			}
 		})
-		let arrayToReturn = newArray.forEach(function(number) {
-			number ** 2;
+
+		let arrayToReturn = newArray.map(function(number) {
+			return number ** 2;
 		})
 
 		return arrayToReturn.reduce(function(accumulator, current){
